@@ -43,7 +43,7 @@ function woocommerce_custom_surcharge() {
     if (cart_has_product_with_shipping_class( 'tonewood' )) {
         $woocommerce->cart->add_fee( 'Tonewood Shipping Fee :', $fixed, true, '' );
     }
-    if (cart_has_product_with_shipping_class( 'life-basics' )) {
-		$woocommerce->cart->add_fee( 'Life Basics Shipping Fee :', $fixed, true, '' );
+    if (cart_has_product_with_shipping_class( 'your-shipping-class-slug-here' )) {
+		$woocommerce->cart->add_fee( 'Any text you would like to see as fee heading :', $fixed, true, '' );
 	}
 }
